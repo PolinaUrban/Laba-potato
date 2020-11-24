@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Potato</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <script>
+           document.write("Вы используете браузер:<br>" + navigator.appName);
+document.write("<br><br>");
+document.write("Версия Вашего браузера:<br>"+ navigator.appVersion);
+
+document.write("<br><br>");
+var browser = navigator.appName;
+
+browser = browser.replace(/^\s*/, '').replace(/\s*$/, '');
+if (browser == "Netscape") {
+document.write("Это браузер NetScape<br>");
+document.write("Тут можно выполнять скрипты для обладателей браузеров
+NetScape");
+}
+else
+document.write("Вы используете браузер:" + navigator.appName);
+        </script>
+    </body>
+</html>
